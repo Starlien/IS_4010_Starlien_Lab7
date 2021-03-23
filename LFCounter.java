@@ -10,7 +10,7 @@ public class LFCounter implements ActionListener{
    LFCounter(){
     JFrame frame = new JFrame("Counter");
     frame.setLayout(new FlowLayout());
-    frame.setSize(250,100);
+    frame.setSize(150,125);
 
     JButton Left = new JButton("Left");
     JButton Right = new JButton("Right");
@@ -24,13 +24,17 @@ public class LFCounter implements ActionListener{
 
     frame.add(Left);
     frame.add(Right);
-    frame.add(Reset);
-
+    
+    
     leftlabel = new JLabel("Count: " + leftCounter);
     rightlabel = new JLabel("Count: " + rightCounter);
     frame.add(leftlabel);
     frame.add(rightlabel);
+
+
+    frame.add(Reset);
     frame.setVisible(true);
+    
   
   
 
